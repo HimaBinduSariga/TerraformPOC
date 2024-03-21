@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      terraform: latest
+  build:
+    commands:
+      - terraform init
+      - terraform plan -out=tfplan
