@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.11  # Use one of the supported Python versions available in your build environment
+      python: 3.11
   pre_build:
     commands:
       - apt-get update
@@ -15,4 +15,6 @@ phases:
     commands:
       - terraform init
       - terraform plan -out=tfplan
+      - terraform apply tfplan
+
 
