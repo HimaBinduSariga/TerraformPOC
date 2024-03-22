@@ -3,6 +3,6 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "myfirsts3bucket123"  # Change this to a unique name
+  bucket = "himabindus3bucket"  # Change this to a unique name
   #acl    = "private"
 }
